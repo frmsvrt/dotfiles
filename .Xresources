@@ -45,3 +45,6 @@ urxvt*VT100.Translations: #override \
 ! white
 *.color7:       #cbe3e7
 *.color15:      #a6b3cc
+
+Xcursor.theme:	Neutral_Plus
+Xcursor.size:	24
