@@ -14,4 +14,4 @@ xrandr --output DP-5 --rotate left
 xrandr --output DP-3 --right-of DP-5 --rotate normal
 # xrandr --output HDMI-0
 
-exec i3
+exec xmonad
