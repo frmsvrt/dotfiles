@@ -1,4 +1,4 @@
-Config { font = "xft:Pragmata Pro:size=23.5"
+Config { font = "xft:Pragmata Pro:size=12.5"
        , bgColor = "black"
        , fgColor = "grey"
        , position = Top
