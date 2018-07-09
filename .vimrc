@@ -8,6 +8,7 @@ set ruler
 highlight Comment ctermfg=blue
 set mps+=<:>
 set sidescroll=1
+set noswapfile
 
 
 filetype plugin on
