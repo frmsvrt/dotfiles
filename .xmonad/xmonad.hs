@@ -10,7 +10,7 @@ import qualified Graphics.X11.ExtraTypes.XF86 as XF86
 main = do
 xmproc <- spawnPipe "xmobar"
 xmonad $ defaultConfig
-  { terminal = "gnome-terminal"
+  { terminal = "urxvt"
   , manageHook = manageDocks <+> manageHook defaultConfig
   , layoutHook = avoidStruts $ layoutHook defaultConfig
   , logHook = dynamicLogWithPP $ defaultPP { ppOutput = hPutStrLn xmproc, ppOrder = \(ws:_:t:_) -> [ws,t] }

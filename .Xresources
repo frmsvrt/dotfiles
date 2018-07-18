@@ -1,17 +1,12 @@
-!urxvt*letterSpace: -2
-urxvt*renderFont: true
-! urxtv*faceName: PragmataPro
-urxvt*saveLines: 2000
-urxvt*foreground: white
-urxvt*background: black
-urxvt*cursorColor: rgb:80/00/00
-urxvt*VT100.Translations: #override \
-  <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0) \n\
-  Ctrl <KeyPress> V: insert-selection(CLIPBOARD, CUT_BUFFER0, PRIMARY)
+URxvt*scrollBar: false
+URxvt*font: xft:PragmataPro Mono:size=22.5
+URxvt*cursorColor: rgb:80/00/00
+URxvt*letterSpace: -2
 
+Xft.dpi: 192
 ! special
 *.foreground:   #cbe3e7
-*.background:   #1b182c
+*.background:   #000000
 *.cursorColor:  #fbfcfc
 
 ! black
@@ -47,4 +42,4 @@ urxvt*VT100.Translations: #override \
 *.color15:      #a6b3cc
 
 Xcursor.theme:	Neutral_Plus
-Xcursor.size:	24
+Xcursor.size:	70
