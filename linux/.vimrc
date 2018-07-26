@@ -12,6 +12,8 @@ set ruler
 set mps+=<:>
 set sidescroll=1
 set noswapfile
+set mouse=a
+set nonumber
 
 set noshowmode
 set noruler
