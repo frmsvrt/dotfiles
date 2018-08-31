@@ -1,18 +1,27 @@
 syntax on
-set ts=2 sw=2
-set expandtab
+filetype plugin on
+filetype indent on
+
+set sts=2 sw=2 ts=2 noex
+set smarttab
 set ai
 set number
 set hlsearch!
 set ruler
-highlight Comment ctermfg=blue
+
 set mps+=<:>
 set sidescroll=1
 set noswapfile
+set mouse=a
 
+"set noshowmode
+"set noruler
+set laststatus=0
+set noshowcmd
 
 filetype plugin on
 filetype indent on
+
 au BufNewFile,BufRead *.json setf javascript
 au BufNewFile,BufRead *.vgo setf go
 au BufNewFile,BufRead *.cu set ft=cuda
@@ -21,6 +30,7 @@ au BufNewFile,BufRead *.cl set ft=opencl
 "au BufNewFile,BufRead *.cl setf opencl
 au BufNewFile,BufRead *.sim set ft=simit
 
+autocmd Filetype python setlocal ts=2 sw=2 expandtab
 
 nno <F2> :set spell!<bar>set spell? <CR>
 nno <F3> :set hls!<bar>set hls? <CR>
@@ -32,3 +42,5 @@ map <F11> :e ++enc=cp1251 <CR>
 map <F12> :e ++enc=gb2312 <CR>
 
 autocmd BufReadPre * if getfsize(expand("%")) > 2000000 | syntax off | endif
+set term=screen-256color
+color challenger_deep
