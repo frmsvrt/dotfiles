@@ -1,0 +1,15 @@
+setxkbmap -layout "us,ru"
+setxkbmap -option "grp:caps_toggle,grp_led:scroll"
+
+xmodmap -e "pointer = 1 2 3 5 4"
+xrdb -merge ~/.Xresources
+xsetroot -solid gray
+
+xsetroot -cursor_name left_ptr &
+
+export PATH=~/bin:$PATH
+
+#exec startxfce4
+#exec startkde
+#exec gnome-session
+exec dbus-launch xmonad
